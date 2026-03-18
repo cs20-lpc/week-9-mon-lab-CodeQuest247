@@ -45,10 +45,9 @@ int main() {
         cout << e << " ";
     }
 
-    // populate queue A by enqueueing random values
-    srand(time(0));
+    // populate queue A by enqueueing values 0 through 9
     for (int i = 0; i < MAX_SIZE; i++) {
-        queueA.enqueue(rand() % 500);
+        queueA.enqueue(i);
     }
 
     // display its length, front, and back
